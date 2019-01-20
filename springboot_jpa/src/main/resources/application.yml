@@ -1,0 +1,20 @@
+#DB Configuration
+spring:
+   datasource:
+     driver-class-name: com.mysql.jdbc.Driver
+     url: jdbc:mysql:///test?useUnicode=true&characterEncoding=utf8
+     username: root
+     password: root
+   redis:
+     host: 127.0.0.1
+     port: 6379
+
+  #JPA Configuration
+   jpa:
+     database: MySQL
+     show-sql: true
+     generate-ddl: true
+     hibernate:
+       ddl-auto: update
+       naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+

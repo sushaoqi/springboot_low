@@ -1,0 +1,15 @@
+#DB Configuration
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///test?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+
+
+#spring集成mybatis环境
+#pojo别名扫描包
+mybatis:
+  type-aliases-package: com.juzss.entity
+#加载mybatis映射文件
+  mapper-locations: classpath:mapper/*Mapper.xml
